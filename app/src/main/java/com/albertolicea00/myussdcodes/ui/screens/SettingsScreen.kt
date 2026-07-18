@@ -43,10 +43,10 @@ import com.albertolicea00.myussdcodes.AppViewModel
 import com.albertolicea00.myussdcodes.R
 
 private const val CATALOG_URL =
-    "https://raw.githubusercontent.com/albertolicea00/my-ussd-codes/main/codes/gsm-standard.json"
-private const val REPO_CATALOG = "https://github.com/albertolicea00/my-ussd-codes"
-private const val REPO_ANDROID = "https://github.com/albertolicea00/my-ussd-codes-apk"
-private const val REPO_IOS = "https://github.com/albertolicea00/my-ussd-codes-ios"
+    "https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes-collection/main/codes/gsm-standard.json"
+private const val REPO_CATALOG = "https://github.com/albertolicea00/MyUSSDCodes-collection"
+private const val REPO_ANDROID = "https://github.com/albertolicea00/MyUSSDCodes-apk"
+private const val REPO_IOS = "https://github.com/albertolicea00/MyUSSDCodes-ios"
 
 /** Third tab: import, data management and app info. */
 @Composable
