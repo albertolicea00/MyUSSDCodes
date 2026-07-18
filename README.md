@@ -1,15 +1,20 @@
-# My USSD Codes — Android
+# My USSD Codes  [Android]
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin)](https://kotlinlang.org)
+[![API](https://img.shields.io/badge/API-26%2B-brightgreen)](https://developer.android.com)
+[![Compose](https://img.shields.io/badge/Compose-Material%203-4285F4)](https://developer.android.com/jetpack/compose)
 
 Android app to browse, organize and run USSD codes. Built with Kotlin and Jetpack Compose.
 
-> **This is not a monorepo.** Related repositories:
+> 📦 **Related repositories:**
 >
 > | What | Repository |
 > | ---- | ---------- |
-> | Code catalog (importable collections) | [my-ussd-codes](https://github.com/albertolicea00/my-ussd-codes) |
-> | iOS app | [my-ussd-codes-ios](https://github.com/albertolicea00/my-ussd-codes-ios) |
+> | 📋 Code catalog (collections) | [MyUSSDCodes-collection](https://github.com/albertolicea00/MyUSSDCodes-collection) |
+> | 📱 iOS app | [MyUSSDCodes-ios](https://github.com/albertolicea00/MyUSSDCodes-ios) |
 
-## Features
+## ✨ Features
 
 The app is organized in three sections (bottom navigation):
 
@@ -21,14 +26,14 @@ Beyond the built-in catalog, users can **create their own codes** with a bit of 
 
 Dialing uses `ACTION_DIAL`, so the code is only pre-filled in the system dialer — the final call tap is always the user's, and no call permission is required.
 
-## Tech stack
+## 🛠 Tech stack
 
 - Kotlin 2.0 · Jetpack Compose (Material 3) · Navigation Compose
 - `kotlinx.serialization` for the collection format
 - Plain JSON file persistence (no database) — the dataset is tiny
 - Min SDK 26, target SDK 35
 
-## Project structure
+## 📁 Project structure
 
 ```
 app/src/main/java/com/albertolicea00/myussdcodes/
@@ -47,7 +52,7 @@ app/src/main/java/com/albertolicea00/myussdcodes/
 
 The seed catalog lives in `app/src/main/assets/collections/gsm-standard.json` and is a verbatim copy of the catalog repository's collection.
 
-## Building
+## 🏗 Building
 
 ```bash
 ./gradlew assembleDebug     # build a debug APK
@@ -56,24 +61,24 @@ The seed catalog lives in `app/src/main/assets/collections/gsm-standard.json` an
 
 Or open the project in Android Studio (Ladybug or newer) and run.
 
-## Importing collections
+## 📥 Importing collections
 
-Settings → Import: paste a collection URL from the [catalog](https://github.com/albertolicea00/my-ussd-codes), e.g.
+Settings → Import: paste a collection URL from the [catalog](https://github.com/albertolicea00/MyUSSDCodes-collection), e.g.
 
 ```
-https://raw.githubusercontent.com/albertolicea00/my-ussd-codes/main/codes/gsm-standard.json
+https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes-collection/main/codes/gsm-standard.json
 ```
 
 The collection format is documented in the catalog repository (JSON Schema included).
 
-## Contributing
+## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). New USSD codes belong in the [catalog repository](https://github.com/albertolicea00/my-ussd-codes), not here.
+See [CONTRIBUTING.md](CONTRIBUTING.md). New USSD codes belong in the [catalog repository](https://github.com/albertolicea00/MyUSSDCodes-collection), not here.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 USSD codes are executed by your carrier. Codes vary by country, carrier and plan; some may be paid services. Double-check a code before running it.
 
-## License
+## 📄 License
 
 [MIT](LICENSE) © 2026 Alberto Licea
