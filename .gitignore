@@ -1,0 +1,69 @@
+# --- Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# --- Android Studio / IntelliJ ---
+.idea/
+*.iml
+.navigation/
+captures/
+output.json
+local.properties
+
+# --- Android build artifacts ---
+*.apk
+*.aab
+*.ap_
+*.dex
+bin/
+gen/
+out/
+lint/reports/
+lint-results*.xml
+
+# --- Signing (never commit keys) ---
+*.jks
+*.keystore
+!debug.keystore
+keystore.properties
+
+# --- Kotlin / Java ---
+*.class
+.kotlin/
+*.hprof
+
+# --- Version-managed services ---
+google-services.json
+firebase-crashlytics-buildtime.properties
+
+# --- Profiling / misc ---
+*.log
+.cxx/
+freeline/
+freeline.py
+freeline_project.json
+vcs.xml
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Linux ---
+*~
+.directory
+.Trash-*
+
+# --- Editors ---
+.vscode/
+*.swp
+*.swo
