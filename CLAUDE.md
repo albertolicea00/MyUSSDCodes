@@ -6,7 +6,7 @@ Guidance for AI assistants (Claude Code) working in this repository.
 
 The **Android app** of My USSD Codes: browse, organize and run USSD codes. Kotlin + Jetpack Compose (Material 3), single module (`:app`).
 
-**This is NOT a monorepo.** The catalog data lives in [my-ussd-codes](https://github.com/albertolicea00/my-ussd-codes) and the iOS app in [my-ussd-codes-ios](https://github.com/albertolicea00/my-ussd-codes-ios) — separate repositories. Never add USSD code data here beyond the bundled seed asset.
+**This is NOT a monorepo.** The catalog data lives in [MyUSSDCodes-collections](https://github.com/albertolicea00/MyUSSDCodes-collections) and the iOS app in [MyUSSDCodes-ios](https://github.com/albertolicea00/MyUSSDCodes-ios) — separate repositories. Never add USSD code data here beyond the bundled seed asset.
 
 ## Architecture
 
