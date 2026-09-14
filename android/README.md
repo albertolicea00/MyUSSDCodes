@@ -7,12 +7,15 @@
 
 Android app to browse, organize and run USSD codes. Built with Kotlin and Jetpack Compose.
 
-> 📦 **Related repositories:**
+> 📦 **Monorepo components:**
 >
-> | What | Repository |
+> | What | Location |
 > | ---- | ---------- |
-> | 📋 Code catalog (collections) | [MyUSSDCodes-collection](https://github.com/albertolicea00/MyUSSDCodes-collection) |
-> | 📱 iOS app | [MyUSSDCodes-ios](https://github.com/albertolicea00/MyUSSDCodes-ios) |
+> | 📋 Code catalog (collections) | [`../data/`](../data/) |
+> | 📱 iOS app | [`../ios/`](../ios/) |
+
+> **Migration note:** Android, iOS, and the catalog were previously separate
+> repositories. They now live together in the [My USSD Codes monorepo](../).
 
 ## ✨ Features
 
@@ -50,7 +53,8 @@ app/src/main/java/com/albertolicea00/myussdcodes/
     └── screens/                 # Sections, AllCodes, Settings, CodeEditor
 ```
 
-The seed catalog lives in `app/src/main/assets/collections/gsm-standard.json` and is a verbatim copy of the catalog repository's collection.
+The seed catalog lives in `app/src/main/assets/collections/gsm-standard.json`
+and mirrors [`../data/codes/gsm-standard.json`](../data/codes/gsm-standard.json).
 
 ## 🏗 Building
 
@@ -63,13 +67,14 @@ Or open the project in Android Studio (Ladybug or newer) and run.
 
 ## 📥 Importing collections
 
-Settings → Import: paste a collection URL from the [catalog](https://github.com/albertolicea00/MyUSSDCodes-collection), e.g.
+Settings → Import accepts a collection URL from the shared
+[`../data/`](../data/) catalog, for example:
 
 ```
-https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes-collection/main/codes/gsm-standard.json
+https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes/main/data/codes/gsm-standard.json
 ```
 
-The collection format is documented in the catalog repository (JSON Schema included).
+The collection format and JSON Schema are documented in [`../data/`](../data/).
 
 ## 🤝 Contributing
 
