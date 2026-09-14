@@ -1,13 +1,22 @@
 name: Feature request
-description: Suggest an improvement for the Android app.
+description: Suggest an improvement for an app, catalog tooling, or CI.
 title: "[feat]: "
 labels: ["enhancement"]
 body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Android app
+        - iOS app
+        - Catalog tooling or CI
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
       label: What problem does this solve?
-      description: Describe the need, not only the solution.
     validations:
       required: true
   - type: textarea
