@@ -1,17 +1,20 @@
 # My USSD Codes  [Code Catalog]
 
-[![Validate collections](https://github.com/albertolicea00/MyUSSDCodes-collection/actions/workflows/validate.yml/badge.svg)](https://github.com/albertolicea00/MyUSSDCodes-collection/actions/workflows/validate.yml)
+[![Validate catalog](https://github.com/albertolicea00/MyUSSDCodes/actions/workflows/validate.yml/badge.svg)](https://github.com/albertolicea00/MyUSSDCodes/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 [![Node](https://img.shields.io/badge/Node-18%2B-339933?logo=node.js)](https://nodejs.org)
 
 Community-maintained catalog of USSD codes that feeds the **My USSD Codes** mobile apps.
 
-> 📦 **Related repositories:**
+> 📦 **Monorepo components:**
 >
-> | Platform | Repository |
+> | Platform | Location |
 > | -------- | ---------- |
-> | 📱 Android  | [MyUSSDCodes-apk](https://github.com/albertolicea00/MyUSSDCodes-apk) |
-> | 📱 iOS      | [MyUSSDCodes-ios](https://github.com/albertolicea00/MyUSSDCodes-ios) |
+> | 📱 Android | [`../android/`](../android/) |
+> | 📱 iOS | [`../ios/`](../ios/) |
+
+> **Migration note:** The catalog, Android app, and iOS app were previously
+> separate repositories. They now live in the [My USSD Codes monorepo](../).
 
 ## 📱 About the apps
 
@@ -23,7 +26,7 @@ Community-maintained catalog of USSD codes that feeds the **My USSD Codes** mobi
 
 Besides importing collections from this repository, users can **create their own codes** with a bit of logic: codes may declare **variables** (placeholders such as `{number}`) that the app asks for right before dialing.
 
-## 📁 Repository layout
+## 📁 Catalog layout
 
 ```
 .
@@ -38,8 +41,11 @@ Besides importing collections from this repository, users can **create their own
 │   └── ussd-code.schema.json
 ├── scripts/
 │   └── validate.js         # Validates the whole catalog (no dependencies)
-└── .github/                # CI, issue and PR templates
+└── README.md                # Catalog documentation
 ```
+
+Shared CI, issue forms, and pull-request templates live at
+[`../.github/`](../.github/).
 
 ## 📋 Collection format
 
@@ -90,17 +96,17 @@ Codes that can lock a SIM, erase settings or cost money must set `"dangerous": t
 No dependencies needed — plain Node.js (18+):
 
 ```bash
-node scripts/validate.js
+node data/scripts/validate.js
 ```
 
-CI runs the same script on every push and pull request.
+CI runs the same script from the repository root on every push and pull request.
 
 ## 📥 Importing into the app
 
 The apps read raw files straight from this repository, e.g.:
 
 ```
-https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes-collection/main/codes/gsm-standard.json
+https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes/main/data/codes/gsm-standard.json
 ```
 
 Paste a collection URL in **Settings → Import** inside the app.
@@ -119,7 +125,7 @@ a tracking issue.
 | [`codes/cuba-cubacel.json`](codes/cuba-cubacel.json) | [cubacell-connect](https://github.com/albertolicea00/cubacell-connect) | ETECSA/Cubacel service codes |
 | [`codes/cuba-banks.json`](codes/cuba-banks.json) | [BancaRemota_app](https://github.com/albertolicea00/BancaRemota_app) | BPA / BANDEC / BM banking codes |
 | [`codes/casero-report.json`](codes/casero-report.json) | [casero.cu-apk](https://github.com/albertolicea00/casero.cu-apk) · [casero.cu-ios](https://github.com/albertolicea00/casero.cu-ios) | guest-report code — **placeholder, not finalized** |
-| [`codes/gsm-standard.json`](codes/gsm-standard.json) | [MyUSSDCodes-apk](https://github.com/albertolicea00/MyUSSDCodes-apk) · [MyUSSDCodes-ios](https://github.com/albertolicea00/MyUSSDCodes-ios) | bundled seed catalog |
+| [`codes/gsm-standard.json`](codes/gsm-standard.json) | [`../android/`](../android/) · [`../ios/`](../ios/) | bundled seed catalog |
 
 **Workflow:** edit the code here first, bump the collection `version` and
 `index.json`, then update the consuming app to match. The consumers compare only
