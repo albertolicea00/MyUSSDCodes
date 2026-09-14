@@ -41,6 +41,19 @@ node data/scripts/validate.js
 Each code needs a verifiable source. Codes that can charge money, lock a SIM,
 or erase settings must be marked as dangerous and explain the risk.
 
+### Other code sets
+
+Some USSD code sets belong to other, more narrowly focused apps and live in
+their own repositories with their own data formats. They are not copied into
+`data/codes/` or imported automatically by the My USSD Codes apps, since
+mapping each one to this project's collection schema would add unnecessary
+complexity.
+
+| App | Repository | What it covers |
+| --- | --- | --- |
+| [BancaRemota](https://github.com/albertolicea00/BancaRemota) | [codes.json](https://github.com/albertolicea00/BancaRemota/blob/main/BancaRemota/codes.json) | USSD banking codes for Cuban banks |
+| [CubaCellConnect](https://github.com/albertolicea00/CubaCellConnect) | [codes.json](https://github.com/albertolicea00/CubaCellConnect/blob/main/CubaCellConnect/codes.json) | USSD telephony codes for ETECSA, Cuba's telecom operator |
+
 ## Verify a consuming app
 
 Apps that bundle a copy of a collection can use the
