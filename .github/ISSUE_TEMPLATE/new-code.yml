@@ -1,0 +1,35 @@
+name: New code proposal
+description: Propose a USSD code or collection for the shared catalog.
+title: "[new code]: "
+labels: ["new-code"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Code name
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Dial string
+      placeholder: "*234*{number}*{amount}#"
+    validations:
+      required: true
+  - type: input
+    id: carrier
+    attributes:
+      label: Carrier and country
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Carrier page URL, GSM specification, or a tested device and plan.
+    validations:
+      required: true
