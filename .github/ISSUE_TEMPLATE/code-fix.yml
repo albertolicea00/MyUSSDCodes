@@ -1,0 +1,25 @@
+name: Code fix
+description: Report a USSD code that is wrong, deprecated, or missing information.
+title: "[fix]: "
+labels: ["code-fix"]
+body:
+  - type: input
+    id: code-id
+    attributes:
+      label: Code ID
+      description: The affected `id`, or its file and name.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: How did you verify it?
+      description: Provide carrier documentation or device, carrier, plan, and date.
+    validations:
+      required: true
