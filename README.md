@@ -41,6 +41,14 @@ node data/scripts/validate.js
 Each code needs a verifiable source. Codes that can charge money, lock a SIM,
 or erase settings must be marked as dangerous and explain the risk.
 
+## Verify a consuming app
+
+Apps that bundle a copy of a collection can use the
+[USSD catalog verification template](templates/ussd-catalog-verification/).
+It provides a dependency-free Node.js script and a weekly GitHub Actions
+workflow that compare the app's local dial strings with this published catalog.
+This catches catalog drift while allowing app-specific names and descriptions.
+
 ## Build the apps
 
 ```bash
