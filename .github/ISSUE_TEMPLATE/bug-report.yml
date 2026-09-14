@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a problem in an app, catalog tooling, or CI.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Android app
+        - iOS app
+        - Catalog tooling, schema, or CI
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include clear reproduction steps and the full command output when applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Pixel 8, Android 15; iPhone 15, iOS 18; or macOS 15, Node 20
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
