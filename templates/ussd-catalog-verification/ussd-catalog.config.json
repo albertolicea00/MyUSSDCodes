@@ -1,0 +1,9 @@
+{
+  "catalogBaseUrl": "https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes/main/data/",
+  "checks": [
+    {
+      "collection": "gsm-standard",
+      "localFile": "app/src/main/assets/collections/gsm-standard.json"
+    }
+  ]
+}

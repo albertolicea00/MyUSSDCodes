@@ -1,0 +1,23 @@
+name: Verify USSD catalog
+
+on:
+  pull_request:
+    paths:
+      - "app/src/main/assets/collections/**"
+      - "scripts/verify-ussd-catalog.js"
+      - "ussd-catalog.config.json"
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/verify-ussd-catalog.js
