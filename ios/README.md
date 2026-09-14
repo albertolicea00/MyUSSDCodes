@@ -7,12 +7,15 @@
 
 iOS app to browse, organize and run USSD codes. Built with Swift and SwiftUI.
 
-> 📦 **Related repositories:**
+> 📦 **Monorepo components:**
 >
-> | What | Repository |
+> | What | Location |
 > | ---- | ---------- |
-> | 📋 Code catalog (collections) | [MyUSSDCodes-collection](https://github.com/albertolicea00/MyUSSDCodes-collection) |
-> | 📱 Android app | [MyUSSDCodes-apk](https://github.com/albertolicea00/MyUSSDCodes-apk) |
+> | 📋 Code catalog (collections) | [`../data/`](../data/) |
+> | 📱 Android app | [`../android/`](../android/) |
+
+> **Migration note:** Android, iOS, and the catalog were previously separate
+> repositories. They now live together in the [My USSD Codes monorepo](../).
 
 ## ✨ Features
 
@@ -50,7 +53,7 @@ MyUSSDCodes/
 │   ├── SettingsView.swift      # Import, data, about
 │   ├── CodeEditorView.swift    # Create/edit custom codes
 │   └── Components.swift        # CodeRow, CodeListView, RunCodeSheet
-└── Resources/gsm-standard.json # Bundled seed (verbatim copy from the catalog repo)
+└── Resources/gsm-standard.json # Bundled seed mirrored from ../data/
 ```
 
 ## 🏗 Building
@@ -64,13 +67,14 @@ xcodebuild -project MyUSSDCodes.xcodeproj -scheme MyUSSDCodes \
 
 ## 📥 Importing collections
 
-Settings → Import: paste a collection URL from the [catalog](https://github.com/albertolicea00/MyUSSDCodes-collection), e.g.
+Settings → Import accepts a collection URL from the shared
+[`../data/`](../data/) catalog, for example:
 
 ```
-https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes-collection/main/codes/gsm-standard.json
+https://raw.githubusercontent.com/albertolicea00/MyUSSDCodes/main/data/codes/gsm-standard.json
 ```
 
-The collection format is documented in the catalog repository (JSON Schema included).
+The collection format and JSON Schema are documented in [`../data/`](../data/).
 
 ## 🤝 Contributing
 
