@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My USSD Codes</string>
+
+    <string name="tab_sections">Sections</string>
+    <string name="tab_all_codes">All codes</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="search_placeholder">Search codes…</string>
+    <string name="new_code">New code</string>
+    <string name="edit_code">Edit code</string>
+    <string name="dial">Open in dialer</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="dangerous_warning">This code can lock your SIM, change settings or cost money. Double-check before running it.</string>
+</resources>
