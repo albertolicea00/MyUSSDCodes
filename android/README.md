@@ -1,6 +1,6 @@
 # My USSD Codes  [Android]
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin)](https://kotlinlang.org)
 [![API](https://img.shields.io/badge/API-26%2B-brightgreen)](https://developer.android.com)
 [![Compose](https://img.shields.io/badge/Compose-Material%203-4285F4)](https://developer.android.com/jetpack/compose)
@@ -73,7 +73,8 @@ The collection format is documented in the catalog repository (JSON Schema inclu
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). New USSD codes belong in the [catalog repository](https://github.com/albertolicea00/MyUSSDCodes-collection), not here.
+See the root [contribution guide](../CONTRIBUTING.md). New USSD codes belong in
+the shared catalog under [`../data/`](../data/), not in the app seed asset.
 
 ## ⚠️ Disclaimer
 
@@ -81,4 +82,4 @@ USSD codes are executed by your carrier. Codes vary by country, carrier and plan
 
 ## 📄 License
 
-[MIT](LICENSE) © 2026 Alberto Licea
+[MIT](../LICENSE) © 2026 Alberto Licea

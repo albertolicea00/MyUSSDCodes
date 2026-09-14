@@ -1,7 +1,7 @@
 # My USSD Codes  [Code Catalog]
 
 [![Validate collections](https://github.com/albertolicea00/MyUSSDCodes-collection/actions/workflows/validate.yml/badge.svg)](https://github.com/albertolicea00/MyUSSDCodes-collection/actions/workflows/validate.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 [![Node](https://img.shields.io/badge/Node-18%2B-339933?logo=node.js)](https://nodejs.org)
 
 Community-maintained catalog of USSD codes that feeds the **My USSD Codes** mobile apps.
@@ -130,7 +130,9 @@ to stay red until the real casero.rem.cu reporting code is published here (the
 
 ## 🤝 Contributing
 
-New codes and collections are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Every submitted code needs a source and, ideally, confirmation that it was tested on a real device.
+New codes and collections are very welcome — see the root
+[contribution guide](../CONTRIBUTING.md). Every submitted code needs a source
+and, ideally, confirmation that it was tested on a real device.
 
 ## ⚠️ Disclaimer
 
@@ -138,4 +140,4 @@ USSD codes are executed by your carrier, not by the apps. Codes vary by country,
 
 ## 📄 License
 
-[MIT](LICENSE) © 2026 Alberto Licea
+[MIT](../LICENSE) © 2026 Alberto Licea

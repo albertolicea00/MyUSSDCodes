@@ -1,6 +1,6 @@
 # My USSD Codes [iPhone]
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../LICENSE)
 [![Swift](https://img.shields.io/badge/Swift-5-F05138?logo=swift)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-17%2B-blue)](https://developer.apple.com/ios)
 [![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-007AFF)](https://developer.apple.com/xcode/swiftui)
@@ -74,7 +74,8 @@ The collection format is documented in the catalog repository (JSON Schema inclu
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). New USSD codes belong in the [catalog repository](https://github.com/albertolicea00/MyUSSDCodes-collection), not here.
+See the root [contribution guide](../CONTRIBUTING.md). New USSD codes belong in
+the shared catalog under [`../data/`](../data/), not in the app seed resource.
 
 ## ⚠️ Disclaimer
 
@@ -82,4 +83,4 @@ USSD codes are executed by your carrier. Codes vary by country, carrier and plan
 
 ## 📄 License
 
-[MIT](LICENSE) © 2026 Alberto Licea
+[MIT](../LICENSE) © 2026 Alberto Licea
