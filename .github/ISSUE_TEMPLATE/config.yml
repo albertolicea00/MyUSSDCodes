@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/albertolicea00/MyUSSDCodes/security/advisories/new
+    about: Please report critical vulnerabilities privately.
