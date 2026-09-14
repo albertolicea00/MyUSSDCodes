@@ -44,8 +44,38 @@ up to date.
 
 ## Commit style
 
-Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): a
-lowercase imperative subject, no trailing period, and at most 72 characters.
+Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with
+this format:
+
+```text
+type(scope): imperative summary
+```
+
+Use the component directory as the scope for component changes:
+
+| Scope | Use for |
+| --- | --- |
+| `android` | Changes under `android/` |
+| `ios` | Changes under `ios/` |
+| `data` | Catalog collections, schemas, or validation tooling under `data/` |
+| `repo` | Shared root documentation, GitHub configuration, or monorepo tooling |
+
+Common types are `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, and `ci`.
+Keep the summary lowercase and imperative, omit its final period, and keep the
+subject to 72 characters or fewer.
+
+```text
+feat(android): add group reordering
+fix(ios): encode hash in dial URL
+feat(data): add cubacel balance code
+fix(data): correct collection version
+docs(repo): clarify monorepo migration
+ci(repo): validate catalog on pull requests
+```
+
+Prefer one component per commit. If a change intentionally spans components,
+split it into focused commits when practical; otherwise use the most relevant
+scope and explain the cross-component impact in the commit body.
 
 ## Code of Conduct
 
